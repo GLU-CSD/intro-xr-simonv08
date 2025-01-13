@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ObjectSpawner : MonoBehaviour
 {
-    public GameObject objectToSpawn;       // Het object dat je wilt spawnen
-    public float spawnInterval = 5f;       // Interval tussen spawns
+    [SerializeField] private GameObject objectToSpawn;       // Het object dat je wilt spawnen
+    [SerializeField] private float spawnInterval = 5f;       // Interval tussen spawns
     private float lastSpawnTime;           // Tijd van de laatste spawn
 
     void Update()

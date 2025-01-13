@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-    public float damageAmount = 10f;       // Schade per aanval
-    public float attackCooldown = 2f;      // Tijd tussen aanvallen
+    [SerializeField] private float damageAmount = 10f;       // Schade per aanval
+    [SerializeField] private float attackCooldown = 2f;      // Tijd tussen aanvallen
     private float lastAttackTime;          // Tijd sinds laatste aanval
 
     private Health baseHealth;       // Referentie Health script base

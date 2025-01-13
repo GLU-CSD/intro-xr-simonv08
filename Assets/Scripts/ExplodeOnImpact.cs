@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class ExplodeOnImpact : MonoBehaviour
 {
-    public float explosionForce = 500f;      // Kracht van de explosie
-    public float explosionRadius = 5f;       // Radius van de explosie
+    [SerializeField] private float explosionForce = 500f;      // Kracht van de explosie
+    [SerializeField] private float explosionRadius = 5f;       // Radius van de explosie
+    [SerializeField] private float DamageAmount = 100f;
 
     void OnCollisionEnter(Collision collision)
     {
@@ -22,10 +23,23 @@ public class ExplodeOnImpact : MonoBehaviour
         Collider[] colliders = Physics.OverlapSphere(transform.position, explosionRadius);
         foreach (Collider nearbyObject in colliders)
         {
-            Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
-            if (rb != null)
+            if (nearbyObject.gameObject.CompareTag("Enemy"))
             {
-                rb.AddExplosionForce(explosionForce, transform.position, explosionRadius);
+                Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
+                if (rb != null)
+                {
+                    rb.AddExplosionForce(explosionForce, transform.position, explosionRadius);
+
+                     if (nearbyObject.CompareTag("Enemy"))
+                     {
+                        Health healthscript = nearbyObject.GetComponent<Health>();
+                        if (healthscript != null)
+                        {
+                        healthscript.TakeDamage(100);
+                        }
+
+                     }
+                }
             }
         }
     }

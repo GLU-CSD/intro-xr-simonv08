@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 902851665744138627}
   - component: {fileID: 4305513384169332931}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cylinder.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3319955743998038099}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: handle_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6011820692062096932}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pin1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,7 +164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6674046468138151017}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,7 +196,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4637959295927825383}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pin2_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -227,7 +227,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1794073886438747182}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: grenade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 4271726243425214070}
   - component: {fileID: 3016264091599757946}
   - component: {fileID: 1936650241609748838}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: M26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -513,7 +513,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6464264010763759962}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Armature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -545,7 +545,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7158795436091914177}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pin2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
