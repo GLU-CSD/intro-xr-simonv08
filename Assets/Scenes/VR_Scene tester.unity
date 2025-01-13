@@ -2359,9 +2359,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1936650241609748838, guid: c7c291e6b9a7ff943b939785953749d2, type: 3}
+      propertyPath: explosionRadius
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 2667670899817292228, guid: c7c291e6b9a7ff943b939785953749d2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 338.394
+      value: 335.828
       objectReference: {fileID: 0}
     - target: {fileID: 2667670899817292228, guid: c7c291e6b9a7ff943b939785953749d2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2369,7 +2373,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2667670899817292228, guid: c7c291e6b9a7ff943b939785953749d2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 364.441
+      value: 364.425
       objectReference: {fileID: 0}
     - target: {fileID: 2667670899817292228, guid: c7c291e6b9a7ff943b939785953749d2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2398,6 +2402,14 @@ PrefabInstance:
     - target: {fileID: 2667670899817292228, guid: c7c291e6b9a7ff943b939785953749d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3016264091599757946, guid: c7c291e6b9a7ff943b939785953749d2, type: 3}
+      propertyPath: m_ThrowVelocityScale
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3016264091599757946, guid: c7c291e6b9a7ff943b939785953749d2, type: 3}
+      propertyPath: m_ThrowAngularVelocityScale
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3336789230192032638, guid: c7c291e6b9a7ff943b939785953749d2, type: 3}
       propertyPath: m_Name
@@ -2457,7 +2469,7 @@ Transform:
   m_GameObject: {fileID: 1313711679}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 342.9, y: 1, z: 336.5}
+  m_LocalPosition: {x: 341.104, y: 1, z: 336.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3030,7 +3042,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4356913316652309232, guid: 10f860ff667d8b84f8af2ff0dc6c9aaa, type: 3}
       propertyPath: spawnInterval
-      value: 0.000000001
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4380473998518953025, guid: 10f860ff667d8b84f8af2ff0dc6c9aaa, type: 3}
       propertyPath: m_Name
