@@ -23,7 +23,7 @@ public class Health : MonoBehaviour
         healthbarFill.fillAmount = currentHealth / maxHealth;
     }
 
-    public void TakeDamage(float amount)
+    public async void TakeDamage(float amount)
     {
         currentHealth -= amount;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
@@ -36,6 +36,8 @@ public class Health : MonoBehaviour
             {
                 agent.enabled = false;
             }
+            
+            Destroy(gameObject, 1f);
         }
     }
 
@@ -45,4 +47,6 @@ public class Health : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
         UpdateHealthBar();
     }
+
+
 }

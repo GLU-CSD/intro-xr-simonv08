@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 1608472211778102462, guid: 19bc312a351a4fd47a936c0ff8f8df57, type: 3}
-  spawnInterval: 0.1
+  spawnInterval: 1
 --- !u!1001 &1294468625425560489
 PrefabInstance:
   m_ObjectHideFlags: 0

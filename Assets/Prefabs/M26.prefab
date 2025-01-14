@@ -280,7 +280,7 @@ Transform:
   m_GameObject: {fileID: 3336789230192032638}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 338.394, y: 2.72, z: 364.441}
+  m_LocalPosition: {x: 335.828, y: 2.72, z: 364.425}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -482,8 +482,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
-  m_ThrowAngularVelocityScale: 1
+  m_ThrowVelocityScale: 8
+  m_ThrowAngularVelocityScale: 5
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
@@ -502,8 +502,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4f1e6a56e66e5a4f8fc72019e069ecf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionForce: 2000
-  explosionRadius: 50
+  explosionForce: 700
+  explosionRadius: 30
+  DamageAmount: 100
 --- !u!1 &4839794604425165584
 GameObject:
   m_ObjectHideFlags: 0
