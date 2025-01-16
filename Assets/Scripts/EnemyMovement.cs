@@ -26,7 +26,7 @@ public class EnemyMovement : MonoBehaviour
     void Update()
     {
         // Beweeg naar de positie van de speler als deze is gevonden
-        if (BaseTransform != null)
+        if (BaseTransform != null  )
         {
             agent.SetDestination(BaseTransform.position);
         }

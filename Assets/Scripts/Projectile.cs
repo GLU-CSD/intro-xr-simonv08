@@ -6,8 +6,8 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] private float SpeedTreeImporter = 10f;
-    [SerializeField] private float damage = 50f;
+    [SerializeField] private float Speed = 10f;
+    [HideInInspector] public float damage = 50f;
     private Transform target;
 
     public void SetTarget(Transform newTarget)
@@ -24,8 +24,9 @@ public class Projectile : MonoBehaviour
         }
 
         Vector3 direction = (target.position - transform.position).normalized;
-        transform.position += direction * SpeedTreeImporter * Time.deltaTime;
-
+        transform.position += direction * Speed * Time.deltaTime;
+        transform.LookAt(target.position, Vector3.up);
+        transform.Rotate(-90, 0, 0);
         if (Vector3.Distance(transform.position, target.position) < 0.2f)
         {
             Explode();

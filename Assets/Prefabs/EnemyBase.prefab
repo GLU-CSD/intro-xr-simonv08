@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 216206155554202067}
   - component: {fileID: 57410205497023862}
   - component: {fileID: 1932293581178984822}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: healthBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 5912664596313691416}
   - component: {fileID: 4744867691398466606}
   - component: {fileID: 7515229185382761351}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyBase
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -152,8 +152,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  currentHealth: 0
   healthbarFill: {fileID: 6585796991558682738}
+  currentHealth: 0
+  ghostHealth: 0
+  IsDead: 0
 --- !u!95 &5442092382301010769
 Animator:
   serializedVersion: 5
@@ -261,7 +263,7 @@ GameObject:
   - component: {fileID: 5951149550244959005}
   - component: {fileID: 806647161172492102}
   - component: {fileID: 6585796991558682738}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: HeathbarFill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -337,7 +339,7 @@ GameObject:
   - component: {fileID: 3476845808774100543}
   - component: {fileID: 5539043427674733692}
   - component: {fileID: 5734368683584597740}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -438,6 +440,14 @@ PrefabInstance:
     - target: {fileID: 100000, guid: f3e3a05cf47384587be645cd972fcc2a, type: 3}
       propertyPath: m_Name
       value: TB_Soldier_Mage
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f3e3a05cf47384587be645cd972fcc2a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: f3e3a05cf47384587be645cd972fcc2a, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f3e3a05cf47384587be645cd972fcc2a, type: 3}
       propertyPath: m_LocalPosition.x

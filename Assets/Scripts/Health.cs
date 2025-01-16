@@ -7,12 +7,15 @@ using UnityEngine.UI;
 public class Health : MonoBehaviour
 {
     [SerializeField] private float maxHealth = 100f;
-    [SerializeField] private float currentHealth;
     [SerializeField] private Image healthbarFill;
-
+    public float currentHealth;
+    public float ghostHealth;
+    public bool IsDead;
     private void Start()
     {
         currentHealth = maxHealth;
+        ghostHealth = maxHealth;
+        IsDead = false;
         UpdateHealthBar();
     }
 
@@ -38,6 +41,15 @@ public class Health : MonoBehaviour
             }
             
             Destroy(gameObject, 1f);
+        }
+    }
+
+    public void GhostDamage(float amount)
+    {
+        ghostHealth -= amount;
+        if (ghostHealth <= 0)
+        {
+            IsDead = true;
         }
     }
 

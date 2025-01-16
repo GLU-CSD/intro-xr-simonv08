@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Base
   - Terrain
+  - Spawner
   layers:
   - Default
   - TransparentFX
@@ -15,8 +16,8 @@ TagManager:
   - Water
   - UI
   - Grabble
-  - 
-  - 
+  - Projectile
+  - enemy
   - 
   - 
   - 
