@@ -34,6 +34,7 @@ public class Health : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            IsDead = true;
             NavMeshAgent agent = gameObject.GetComponent<NavMeshAgent>();
             if (agent != null)
             {

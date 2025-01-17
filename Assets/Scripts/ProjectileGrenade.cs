@@ -4,7 +4,7 @@ using System.Xml.Serialization;
 using UnityEditor;
 using UnityEngine;
 
-public class Projectile : MonoBehaviour
+public class ProjectileGrenade : MonoBehaviour
 {
     [SerializeField] private float Speed = 10f;
     [HideInInspector] public float damage = 50f;
@@ -27,16 +27,16 @@ public class Projectile : MonoBehaviour
         transform.position += direction * Speed * Time.deltaTime;
         transform.LookAt(target.position, Vector3.up);
         transform.Rotate(-90, 0, 0);
-        if (Vector3.Distance(transform.position, target.position) < 0.2f)
+        if (Vector3.Distance(transform.position, target.position) < -0.2f)
         {
             Explode();
         }
     }
 
-   internal virtual void Explode() 
+    void Explode()
     {
         Health enemyHealth = target.GetComponent<Health>();
-        if (enemyHealth != null )
+        if (enemyHealth != null)
         {
             enemyHealth.TakeDamage(damage);
         }
