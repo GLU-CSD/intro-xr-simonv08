@@ -6,7 +6,7 @@ public class ExplodeOnImpact : MonoBehaviour
 {
     [SerializeField] private float explosionForce = 500f;      // Kracht van de explosie
     [SerializeField] private float explosionRadius = 5f;       // Radius van de explosie
-    [SerializeField] private float DamageAmount = 100f;
+    //[SerializeField] private float DamageAmount = 100f;
 
     void OnCollisionEnter(Collision collision)
     {
