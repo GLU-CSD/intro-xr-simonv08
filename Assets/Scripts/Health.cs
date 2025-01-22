@@ -8,6 +8,7 @@ public class Health : MonoBehaviour
 {
     [SerializeField] private float maxHealth = 100f;
     [SerializeField] private Image healthbarFill;
+    [SerializeField] private Image healthbar;
     public float currentHealth;
     public float ghostHealth;
     public bool IsDead;
@@ -19,7 +20,11 @@ public class Health : MonoBehaviour
         UpdateHealthBar();
     }
 
-    
+    private void Update()
+    {
+        Transform trans = Camera.main.transform; 
+        healthbar.gameObject.transform.LookAt(trans.position);
+    }
 
     void UpdateHealthBar()
     {

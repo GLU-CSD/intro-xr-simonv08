@@ -153,6 +153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   healthbarFill: {fileID: 6585796991558682738}
+  healthbar: {fileID: 1932293581178984822}
   currentHealth: 0
   ghostHealth: 0
   IsDead: 0
