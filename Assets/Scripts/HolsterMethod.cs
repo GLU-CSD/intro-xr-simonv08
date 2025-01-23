@@ -9,23 +9,9 @@ public class HolsterMethod : MonoBehaviour
         if (other.CompareTag("Gun"))
         {
             other.transform.SetParent(transform);
-            Rigidbody rb = other.gameObject.GetComponent<Rigidbody>();
-            rb.useGravity = false;
-            rb.velocity = Vector3.zero;
-            rb.freezeRotation = true;
+            other.gameObject.GetComponent<Rigidbody>().useGravity = false;
             Debug.Log("holstered");
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Gun"))
-        {
-            other.transform.SetParent(null);
-            Rigidbody rb = other.gameObject.GetComponent<Rigidbody>();
-            rb.useGravity = true;
-            rb.freezeRotation = false;
-            Debug.Log("unholstered");
+            other.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
         }
     }
 }
