@@ -10,7 +10,6 @@ public class Bullet : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("hit target");
             hit(collision.gameObject);
             Destroy(gameObject);
         }

@@ -26,6 +26,7 @@ public class TowerGrenade : Projectile
                         if (healthscript != null)
                         {
                             healthscript.TakeDamage(damage);
+                            healthscript.GhostDamage(damage);
 
                         }
 
