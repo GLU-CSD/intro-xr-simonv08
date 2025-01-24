@@ -13,23 +13,22 @@ public class Bullet : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy")) 
         {
+            Debug.Log("hit target");
             hit(collision.gameObject);
             Destroy(gameObject); 
         }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }   
+    }
 
     private void hit(GameObject target)
     {
         Health enemyHealth = target.GetComponent<Health>();
+        Debug.Log("hit function works");
         if (enemyHealth != null)
         {
-            enemyHealth.GhostDamage(damage);
             enemyHealth.TakeDamage(damage);
+            Debug.Log("enemy takes damage");
         }
     Destroy(gameObject);
+    Debug.Log("Destroyed game object");
     }
 }
