@@ -8,6 +8,7 @@ TagManager:
   - Base
   - Terrain
   - Spawner
+  - Gun
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - Grabble
   - Projectile
   - enemy
-  - 
+  - holster
   - 
   - 
   - 
